@@ -45,3 +45,13 @@ After reading the [SegNet paper](https://arxiv.org/pdf/1511.00561.pdf), I can bu
 In SegNet, the output of each `MaxPool` in the encoder is the input to the corresponding upsampling layers in the decoder. In the VGG16 model downloaded from Pytorch, the MaxPooling layers are operations number 6, 13, 23, 33, 43. The outputs of these operations can be fetched using 
 
 Now the model is completed, it's time to train.
+
+### Day 9:
+It's been a while. I noticed I did not save the modified parts of the dataset; Labls. So, I added the required part to `Prep-Visualise-Data`.
+ 
+I worked out the necessary transformations needed to feed the raw images to the network. I tried it by feeding an image to VGG_16_bn, not my model, as there may be problems with the model.
+
+### Day 10:
+As usual, feeding our data to the model is not straightforward. I've been stuck here for longer than I wished. Yet, it's expected. 
+
+The problem is mostly picking up the pooling layer's outputs. It turns out the VGG16 built-in model does not take the indices as an output. So the next step is rebuilding the model and initializing the encoder part with the VGG16 weights.
