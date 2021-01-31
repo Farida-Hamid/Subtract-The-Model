@@ -55,3 +55,6 @@ I worked out the necessary transformations needed to feed the raw images to the 
 As usual, feeding our data to the model is not straightforward. I've been stuck here for longer than I wished. Yet, it's expected. 
 
 The problem is mostly picking up the pooling layer's outputs. It turns out the VGG16 built-in model does not take the indices as an output. So the next step is rebuilding the model and initializing the encoder part with the VGG16 weights.
+
+### Day 11:
+The model is adjusted as needed. While the code runs with no error, I need a better understanding of the output data before training.
