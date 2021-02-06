@@ -58,3 +58,6 @@ The problem is mostly picking up the pooling layer's outputs. It turns out the V
 
 ### Day 11:
 The model is adjusted as needed. While the code runs with no error, I need a better understanding of the output data before training.
+
+### Day 12:
+It's been a while. Now I understand what everything means. The output is random, as shown with the output image. Initializing the encoder part of the network with VGG16 weights is no longer straight forward, as the network is slightly changed. Now I need to find a different way to incorporate these weights. I remember passing by something similar. Time for Research 🧐
