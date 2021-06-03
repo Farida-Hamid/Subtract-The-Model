@@ -66,3 +66,6 @@ It's been a while. Now I understand what everything means. The output is random,
 OK, it was time for a *quick search*. There must be a more elegant way to initialize weights. Yet, simple and somewhat stupid is enough for now. I downloaded the VGG16 model and manually assigned the weights from VGG16 to the weights of my network.
 
 Now is training time.
+
+### Day 14:
+It's been **months**. I caught up with where I was. I didn't journal my last step. The model was too slow to try on a CPU. It took too long to run even one episode that I couldn't tell where the problem was. The last thing I did was move the code to google collab. I chose google collab because it offers free resources, and I'm still learning about it. For now, that's the best I can do. I plan to use Azur and AWS soon. I had to make some minor changes to the code now that it's all in one file.
